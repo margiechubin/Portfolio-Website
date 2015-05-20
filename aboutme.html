@@ -2,53 +2,63 @@
 <html>
 
 <head>
-	<!-- add styling to the assets/css folder-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/portfolio.css" />
-
-<!--CSS CODE-->
-<style>
-body
-{
-background-color: aquamarine;
-}
-</style>
-
 </head>
 
-<!--SIDEBAR-->
-<div id="header" style="background-color:#FFA500;">
-<h1 style="margin-bottom:0; font-family:verdana">Margie Chubin</h1></div>
-		
-<div id="menu" style="background-color:#FFD700;height:600px;width:200px;float:left;">
-<b>
-<a href="index.html" style="font-size: 40px">Home</a> <br>
-			<a href="aboutme.html" style="font-size: 40px" >About Me</a> <br>
-			<a href="projects.html" style="font-size: 40px">Projects</a> <br>
-			<a href="contact.html" style="font-size: 40px">Contact</a><br></div>
-
-<h1 style="font-family:verdana;">About Me</h1>
-<!--END SIDEBAR-->
-
-<body>
-	<img id="profile-picture" src="assets/img/me.jpg" width="200" height="250" class="floatright" />
-	<p>Hi. My name is Margie Chubin. I am a Freshmen at the University of Illinois at Urbana-Champaign and I am studying Computer Science.
-	I'm from Skokie, IL- just a half hour drive away from Chicago! I have taken a few courses in computer science in high school, including
-	AP Computer Science and Video Game Programming and Design. I learned to program video games and outside of class, developed an online
-	application using Google Apps Script to allow public users to access personal fundraising data from a restricted spreadsheet for my
-	favorite high school activity, Dance Marathon, a community service group. This all sounds terrible so I will fix it later yay</p>
+<div class="container">
+	<h1><a style="text-decoration: none" href="index.html"> Margie Chubin</a></h1>
+	<div class="row">
+		<div class="col-md-2">
+			<ul class="nav nav-tabs nav-stacked">
+			  <li><a href="index.html">Home</a></li>
+			  <li class="active"><a href="aboutme.html">About Me</a></li>
+			  <li><a href="projects.html">Projects</a></li>
+			  <li><a href="resume.html">Resume</a></li>
+			</ul>
+			<div class="social">
+				<ul style="padding: 3px;">
+					<li><a href="mailto:chubin2@illinois.edu" target="_blank"><i class="fa fa-lg fa-envelope"></i></a></li>
+					<li><a href="http://www.linkedin.com/pub/margie-chubin/76/832/a8b" target="_blank"><i class="fa fa-lg fa-linkedin-square"></i></a></li>
+					<li><a href="http://www.github.com/margiechubin" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-10"> 
+			<h2 class="row">About Me</h2>
+			<div class="row"> 
+				<div class="col-md-8">
+					<p>
+					Hello! I'm a Sophomore studying Computer Science at the University of Illinois at Urbana-Champaign.
+					I am from Skokie, IL- just a half hour drive away from Chicago! I learned how to program my Junior year of high school and I got hooked. You can learn more about my first project, a web application I created for an extracurricular, on my <a href="projects.html#fundraising">projects</a> page! When I am not in class, you can find me volunteering with Alpha Phi Omega, planning awesome programs for Illini Hillel as an executive board member, or going to WCS meetings. I am passionate about coding, volunteering, stir fry, and making others happy.
+					</p>
+					
+					<p>This website began as a project in my ENG 100 class at the beginning of Freshmen year of college, but this summer, Summer 2015, I am revising it.</p>
+					
+					<!--<p>	I invite you to look at my <a href="assets/MargieResume.pdf">resume</a>!</p>-->
+					<div id="classes">
+						<h4>Classes I have taken are:</h4>
+						<ul>
+							<li>CS 125 - Intro to Programming</li>
+							<li>CS 173 - Discrete Math</li>
+							<li>CS 225 - Data Structures</li>
+							<li>CS 233 - Computer Architecture</li>
+							<li>CS 241 - Systems Programming</li>
+							<li>CS 357 - Numerical Methods</li>
+							<li>CS 440 - Aritificial Intelligence</li>
+						</ul>
+					</div>
+				</div>
+			<img src="http://i.imgur.com/da8LmQK.jpg" width="200" height="250">
+			<!--<img id="profile-picture" src="assets/img/me.jpg" width="200" height="250"/>-->
 	
-	<p>I chose to study computer science because I love seeing strings of code turn into something wonderful. At this point in time,
-	I have no idea how I would like to use my programming knowledge, but I grab every opportunity to learn more and gain more experience!</p>
-	
-	<p>	I invite you to take a second to look at my <a href="assets/resumePDF.pdf">resume!</a>!</p>
-</body>
-
-</div>
-	
+			</div>
 	</div>
+</div>
+</html>	
 
-
-	<!-- add javascript code to the assets/js folder-->
-	<script type="text/javascript" src="assets/js/portfolio.js"></script>
-</body>
-</html>
+<script type="text/javascript" src="assets/js/portfolio.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
