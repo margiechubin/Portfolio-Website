@@ -2,46 +2,66 @@
 <html>
 
 <head>
-	<!-- add styling to the assets/css folder-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/portfolio.css" />
-
-<!--CSS CODE-->
-<style>
-body
-{
-background-color: aquamarine;
-}
-</style>
-
 </head>
 
-<!--SIDEBAR-->
-<div id="header" style="background-color:#FFA500;">
-<h1 style="margin-bottom:0; font-family:verdana">Margie Chubin</h1></div>
-
-<div id="menu" style="background-color:#FFD700;height:600px;width:180px;float:left;">
-<b>
-<a href="index.html" style="font-size: 40px">Home</a> <br>
-			<a href="aboutme.html" style="font-size: 40px">About Me</a> <br>
-			<a href="projects.html" style="font-size: 40px">Projects</a> <br>
-			<a href="contact.html" style="font-size: 40px">Contact</a><br></div>
-
-<h1 style="font-family:verdana;">Projects</h1>
-<!--END SIDEBAR-->
-
-<body>
-	This is my online portfolio, which started as an assignment in ENG 100. Throughout this project I learned basic web development by coding in HTML/CSS, utilized source control for the project with Github, and managed my website hosting through FTP. I also implemented my own novel feature to the website by adding &lt;write about it here>. 
-	In high school, I developed an online application using Google Apps Script. You can see it here *insert link here*
-</body>
-
-</div>
-	
+<div class="container">
+	<h1><a style="text-decoration: none" href="index.html"> Margie Chubin</a></h1>
+	<div class="row">
+		<div class="col-md-2">
+			<ul class="nav nav-tabs nav-stacked">
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="aboutme.html">About Me</a></li>
+			  <li class="active"><a href="projects.html">Projects</a></li>
+			  <li><a href="resume.html">Resume</a></li>
+			</ul>
+			<div class="social">
+				<ul style="padding: 3px;">
+					<li><a href="mailto:chubin2@illinois.edu" target="_blank"><i class="fa fa-lg fa-envelope"></i></a></li>
+					<li><a href="http://www.linkedin.com/pub/margie-chubin/76/832/a8b" target="_blank"><i class="fa fa-lg fa-linkedin-square"></i></a></li>
+					<li><a href="http://www.github.com/margiechubin" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-10"> <!--everything else-->
+			<h2 class="row">Projects</h2>
+			<div class="row">
+				<h3>This website</h3>
+				<p>
+					This is my online portfolio, which started as an assignment in ENG 100. Throughout this project I learned basic web development by coding in HTML/CSS, utilized source control for the project with Github, and managed my website hosting through FTP. By revising it about two years later, I am adding more knowledge and experience to the project.
+				</p>
+			</div>
+			<h3>HackIllinois Project 2015</h3>
+			<div class="row"> 
+				
+				<img class="col-md-6" src="http://i.imgur.com/TB1099p.png" height="250" width="500"><br>
+				<p>
+					For my team's project, <a href="http://restaurandom.me/">Restaurandom</a>, we wanted to ease the difficulty for chronically indecisive folks of choosing where to eat. Using an API, we give the user information such as the cuisine or price level of great restaurants near a given location. One may enter a zip code or city, and get a "restaurandomized" suggestion based on popularity. 
+				</p>
+			</div>
+			<div class="row">
+				<a name="fundraising"></a>
+				<h3>Fundraising Account Checker</h3>
+				<p>
+					In high school, I was on the Dance Marathon exec board. Sensing a lack of communication between the Executive Board and the fundraising students, I designed an <a href="https://sites.google.com/a/dm219.org/dmfinance/">online application</a> using Google's API that accesses the fundraising data from private google sheets. Rather than ask someone to look up information, the information is available through the application. It has been used for a few years now and has over 3000 views.
+				</p>
+			</div>
+			<div class="row"> 	
+				<h3>Fruit Frenzy Game</h3>
+				<p class="col-md-8">
+					<br> I have also written a few games, one can be seen
+					 <a href="http://www.vikingcomputerscience.com/mobile/VG/Game02/index.html#!">here</a>. I wrote this simple game as a free choice project in my video game programming class in high school. We had a few weeks to implement any game we wanted, with a mobile focus in mind. Written in C#, it was meant to be my version of another game I had found online. While it can be played by clicking the fruit quickly on a computer, the real fun comes with the touch screen mobile phone version, where the higher levels can be reached.
+				</p>
+				<img src="http://i.imgur.com/2h7yGYs.png" height="250" width="250"><br>
+			</div>
+		</div>
 	</div>
-
-
-
-
-	<!-- add javascript code to the assets/js folder-->
-	<script type="text/javascript" src="assets/js/portfolio.js"></script>
-</body>
+</div>
 </html>
+
+<script type="text/javascript" src="assets/js/portfolio.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
